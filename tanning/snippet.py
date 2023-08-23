@@ -1,6 +1,6 @@
 #
 # License: https://creativecommons.org/licenses/by/4.0/ https://creativecommons.org/licenses/by/4.0/legalcode
-# © 2022 https://github.com/Oops19
+# © 2023 https://github.com/Oops19
 #
 
 
@@ -14,7 +14,6 @@ from sims4.tuning.tunable import HasTunableReference, Tunable
 
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from tanning.modinfo import ModInfo
-
 
 log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().name}", ModInfo.get_identity().name)
 log.enable()

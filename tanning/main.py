@@ -6,6 +6,7 @@
 
 from typing import Dict, List, Union, Set
 
+
 from sims.suntan.suntan_tracker import SuntanTracker
 from sims4.common import Pack
 
@@ -14,16 +15,12 @@ from sims4communitylib.events.zone_spin.events.zone_late_load import S4CLZoneLat
 from sims4communitylib.utils.common_injection_utils import CommonInjectionUtils
 from sims4communitylib.utils.common_log_registry import CommonLogRegistry, CommonLog
 from sims4communitylib.utils.resources.common_game_pack_utils import CommonGamePackUtils
+from tanning.enums.body_type import BodyType
 from tanning.modinfo import ModInfo
-
+from tanning.snippet import TanningFix
 
 log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().name}", ModInfo.get_identity().name)
 log.enable()
-
-
-class TanningFix:
-    pass
-
 
 class Tanning:
     replace_dict: Dict[Union[str,int],Dict[Union[str,int],List[Union[int,str]]]] = dict()  # {bodytype: {cas_part: [pas_part_1, cas_part_2, ...], cp: [cp1, cp2, ...], ...}, bodytype_2: ..., ...}
@@ -94,7 +91,6 @@ class Tanning:
         log.debug("Tanning.initialized = True")
 
     def _parse_tuning_data(self, tuning_data: Dict[Union[str,int],Dict[Union[str,int],List[Union[int,str]]]]) -> Dict[int,Dict[int,Set[int]]]:
-
         try:
             from guids.api.common_packages import CommonPackages
             cp = CommonPackages()
@@ -151,5 +147,5 @@ class Tanning:
 
 @CommonEventRegistry.handle_events(ModInfo.get_identity().name)
 def handle_event(event_data: S4CLZoneLateLoadEvent):
-    log.debug("Tanning ...")
+    log.debug("Initializing Tanning")
     Tanning()

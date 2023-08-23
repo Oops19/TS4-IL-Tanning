@@ -22,10 +22,12 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '1.0.0'
+        return '1.0.1'
 
 
 '''
+v1.0.1
+    Code cleanup
 v1.0.0
     Update docs
 v0.0.8
