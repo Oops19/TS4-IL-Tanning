@@ -19,7 +19,7 @@ from tanning.enums.body_type import BodyType
 from tanning.modinfo import ModInfo
 from tanning.snippet import TanningFix
 
-log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().name}", ModInfo.get_identity().name)
+log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), ModInfo.get_identity().name)
 log.enable()
 
 class Tanning:

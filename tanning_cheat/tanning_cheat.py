@@ -15,7 +15,7 @@ from sims4communitylib.utils.sims.common_sim_utils import CommonSimUtils
 from tanning.modinfo import ModInfo
 
 
-log: CommonLog = CommonLogRegistry.get().register_log(f"{ModInfo.get_identity().name}", ModInfo.get_identity().name)
+log: CommonLog = CommonLogRegistry.get().register_log(ModInfo.get_identity(), ModInfo.get_identity().name)
 log.enable()
 
 
