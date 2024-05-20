@@ -9,7 +9,7 @@ from sims.suntan.suntan_tuning import TanLevel
 from sims4communitylib.services.commands.common_console_command import CommonConsoleCommand
 from sims4communitylib.services.commands.common_console_command_output import CommonConsoleCommandOutput
 
-from sims4communitylib.utils.common_log_registry import CommonLogRegistry, CommonLog
+from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 
 from sims4communitylib.utils.sims.common_sim_utils import CommonSimUtils
 from tanning.modinfo import ModInfo

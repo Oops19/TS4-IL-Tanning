@@ -13,7 +13,7 @@ from sims4.common import Pack
 from sims4communitylib.events.event_handling.common_event_registry import CommonEventRegistry
 from sims4communitylib.events.zone_spin.events.zone_late_load import S4CLZoneLateLoadEvent
 from sims4communitylib.utils.common_injection_utils import CommonInjectionUtils
-from sims4communitylib.utils.common_log_registry import CommonLogRegistry, CommonLog
+from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from sims4communitylib.utils.resources.common_game_pack_utils import CommonGamePackUtils
 from tanning.enums.body_type import BodyType
 from tanning.modinfo import ModInfo
