@@ -22,10 +22,12 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '1.0.2'
+        return '1.0.3'
 
 
-'''
+r'''
+v1.0.3
+    Tested with TS4 v1.107
 v1.0.2
     Updated README for new TS4 version.
 v1.0.1
