@@ -6,7 +6,7 @@ class ModInfo(CommonModInfo):
 
     @property
     def _name(self) -> str:
-        return 'IL_Tanning'
+        return 'IL-Tanning'
 
     @property
     def _author(self) -> str:
