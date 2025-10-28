@@ -22,10 +22,12 @@ class ModInfo(CommonModInfo):
 
     @property
     def _version(self) -> str:
-        return '1.0.3'
+        return '1.0.4'
 
 
 r'''
+v1.0.4
+    Removed reference to HasTunableReference (broken with 1.117.227.1030 update)
 v1.0.3
     Tested with TS4 v1.107
 v1.0.2

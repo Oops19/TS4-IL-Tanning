@@ -10,7 +10,7 @@ from typing import Dict, List, Union
 import services
 from sims4.resources import Types
 from sims4.tuning.instances import HashedTunedInstanceMetaclass
-from sims4.tuning.tunable import HasTunableReference, Tunable
+from sims4.tuning.tunable import Tunable
 
 from sims4communitylib.utils.common_log_registry import CommonLog, CommonLogRegistry
 from tanning.modinfo import ModInfo
