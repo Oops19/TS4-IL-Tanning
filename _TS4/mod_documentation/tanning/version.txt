@@ -1,5 +1,5 @@
-IL-Tanning v1.0.4 for The Sims 4 v1.118.257 and S4CL v3.15
-Created on 2025-10-28
+IL-Tanning v1.0.4 for The Sims 4 v1.119.109 and S4CL v3.15
+Created on 2025-11-09
 v1.0.4
     Removed reference to HasTunableReference (broken with 1.117.227.1030 update)
 
